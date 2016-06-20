@@ -41,4 +41,9 @@ You may use Vidage on one of the following ways:
 | Option        | Type           | Default  | Description |
 | :------------- :|:--------------:| --------:|------------:|
 | autoplay    | Boolean  | true    |        |
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
 ###API/执行方法
