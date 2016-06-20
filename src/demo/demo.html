@@ -50,24 +50,26 @@
 		}
 		
 		.audio_play_area .icon_audio_default {
-			background: transparent url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_unread26f1f1.png) no-repeat 0 0;
+			background: transparent url(../img/iconloop.png) no-repeat 0 0;
 			width: 18px;
 			height: 25px;
 			vertical-align: middle;
 			display: inline-block;
-			-webkit-background-size: 18px auto;
-			background-size: 18px auto;
+			-webkit-background-size: 54px 25px;
+			background-size: 54px 25px;
+			background-position: -36px center;
 		}
 		
 		.audio_play_area .icon_audio_playing {
-			background: transparent url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_reading_126f1f1.png) no-repeat 0 0;
+			background: transparent url(../img/iconloop.png) no-repeat 0 0;
 			width: 18px;
 			height: 25px;
 			vertical-align: middle;
 			display: inline-block;
-			-webkit-background-size: 18px auto;
-			background-size: 18px auto;
+			-webkit-background-size: 54px 25px;
+			background-size: 54px 25px;
 			-webkit-animation: audio_playing 1s infinite;
+			background-position: 0px center;
 			display: none;
 		}
 		
@@ -125,26 +127,26 @@
 		
 		@-webkit-keyframes audio_playing {
 			30% {
-				background-image: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_reading_126f1f1.png)
+				background-position: 0px center;
 			}
 			31% {
-				background-image: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_reading_226f1f1.png)
+				background-position: -18px center;
 			}
 			61% {
-				background-image: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_reading_226f1f1.png)
+				background-position: -18px center;
 			}
-			62% {
-				background-image: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_reading_326f1f1.png)
+			61.5% {
+				background-position: -36px center;
 			}
 			100% {
-				background-image: url(http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/appmsg/audio/icon_audio_reading_326f1f1.png)
+				background-position: -36px center;
 			}
 		}
 	</style>
 
 	<body>
 		<p class="jaudio" style="line-height: 1.5;">
-			<audio src="01.mp3" id="media" width="1" height="1" preload></audio>
+			<audio src="../sound/sound.mp3" id="media" width="1" height="1" preload></audio>
 			<span id="audio_area" class="db audio_area">
 				<span class="audio_wrp db">
 					<span id="voice_play_MzA4NzEzMjYxN181MDIxMjY2NzQ=_0" class="audio_play_area">
