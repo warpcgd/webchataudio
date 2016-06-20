@@ -1,4 +1,4 @@
-中文 | [English](README_EN.md)
+English | [中文](README.md)
 
 ###weixinAudio.js
 #####一个简单的微信样式播放器/a simple webchat AudioPlayer(from weixin of china)

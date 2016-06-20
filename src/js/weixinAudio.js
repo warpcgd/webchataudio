@@ -1,5 +1,5 @@
 (function() {
-	$.fn.jAudio = function() {
+	$.fn.weixinAudio = function() {
 		var $this = $(this);
 
 		function Plugin($context) {
@@ -104,7 +104,12 @@
 				self.$audio_length.text(audioTime);
 			},
 			//改变音频源
-			
+			changeSrc:function(src,callback){
+				var self = this;
+				self.Audio.src = src;
+				self.play();
+				callback{}
+			},
 		};
 		var instantiate = function() {
 			return new Plugin($(this));
