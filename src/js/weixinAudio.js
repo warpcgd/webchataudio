@@ -103,6 +103,8 @@
 					audioTime = minutes + ":" + seconds;
 				self.$audio_length.text(audioTime);
 			},
+			//改变音频源
+			
 		};
 		var instantiate = function() {
 			return new Plugin($(this));
