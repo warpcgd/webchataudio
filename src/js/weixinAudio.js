@@ -63,12 +63,12 @@
 			//进度条
 			animateProgressBarPosition: function() {
 				var self = this,
-					oldpercentage = (self.Audio.currentTime * 100 / self.Audio.duration) + '%';
-				if (oldpercentage == "NaN%") {
-					oldpercentage = 0 + '%'
+					percentage = (self.Audio.currentTime * 100 / self.Audio.duration) + '%';
+				if (percentage == "NaN%") {
+					percentage = 0 + '%'
 				}
 				var styles = {
-					"width": oldpercentage
+					"width": percentage
 				};
 				self.$audio_progress.css(styles);
 			},
