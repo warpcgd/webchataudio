@@ -1,7 +1,7 @@
 ###weixinAudio.js
 #####a simple webchat AudioPlayer(from weixin of china)
 * * *
-微信推文里内置的音频播放器样式，我将其改写为HTML5 Video，使其能在公众号中使用。
+播放器DOM及CSS是微信里内置的音频播放器的样式，重新创建了控制层js，方便在在公众号，APP等场景使用。
 ###Demo
 Take a look at this simple
 ###How to use it
