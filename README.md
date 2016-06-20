@@ -1,12 +1,12 @@
 ###weixinAudio.js
-#####a simple webchat AudioPlayer(from weixin of china)
+#####一个简单的微信样式播放器/a simple webchat AudioPlayer(from weixin of china)
 * * *
 播放器DOM及CSS是微信里内置的音频播放器的样式，重新创建了控制层js，方便在在公众号，APP等场景使用。
-###Demo
+###例子/Demo
 Take a look at this simple
-###How to use it
+###如何使用/How to use it
 You may use Vidage on one of the following ways:
-###Add boilerplate/template in your HTML
+###HTML模板/Add boilerplate/template in your HTML
 ```html
 <p class="jaudio">
 	<audio src="../sound/sound.mp3" id="media" width="1" height="1" preload></audio>
@@ -26,7 +26,7 @@ You may use Vidage on one of the following ways:
 	</span>
 </p>
 ```
-###Regular way/js init
+###Js调用/Regular way(run js)
 ```html
 //你需要先引入一个jQuery(weixinAudip.js need jQuery)
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
