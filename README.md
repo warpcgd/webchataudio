@@ -79,20 +79,20 @@ You may use Vidage on one of the following ways:
 <table width="100%">
 <thead>
   <tr>
-    <th width="10%">Method</th>
+    <th width="15%">Method</th>
     <th width="15%">Parameters</th>
-    <th width="75%">Description</th>
+    <th width="70%">Description</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td><code>play()</code></td>
-    <td>&mdash;</td>
+    <td style="text-align: center;"><code>play()</code></td>
+    <td style="text-align: center;">&mdash;</td>
     <td>Plays the media</td>
   </tr>
   <tr>
-    <td><code>pause()</code></td>
-    <td>'src,callback'</td>
+    <td style="text-align: center;"><code>pause()</code></td>
+    <td style="text-align: center;">'src,callback'</td>
     <td>src:播放的地址</br>callback:回掉函数</td>
   </tr>
  </tbody>
