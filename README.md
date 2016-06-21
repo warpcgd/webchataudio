@@ -47,17 +47,17 @@ You may use Vidage on one of the following ways:
 </script>
 ```
 
-###初始化参数
+###options/初始化参数
 
-||Option || Type || Default || Description
-:--: || :--: || :--: || :--:
-autoplay || Boolean  || true || 播放器是否在初始化时自动播放
-src||String||null||如果audio标签上没设定src属性，可在初始化时设置
+Option | Type | Default | Description
+:-- | :--: | :--: | --:
+autoplay | Boolean  | true | 播放器是否在初始化时自动播放
+src|String|null|如果audeio标签上没设定src属性，可在初始化时设置
 
-###执行方法
+###API/执行方法
 
 Method | Parameters | Description
-:--:| :--: | :--:
+:-- | :--: | --:
 play() | ——  | Plays the audio
 pause()|——|Pauses the audio
 changeSrc(...)|src,callback|src:播放的地址</br>callback:回掉函数
