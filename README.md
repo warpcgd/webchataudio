@@ -79,9 +79,9 @@ You may use Vidage on one of the following ways:
 <table width="100%">
 <thead>
   <tr>
-    <th width="20%">Method</th>
+    <th width="10%">Method</th>
     <th width="15%">Parameters</th>
-    <th width="65%">Description</th>
+    <th width="75%">Description</th>
   </tr>
 </thead>
 <tbody>
