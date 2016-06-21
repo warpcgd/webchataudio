@@ -88,10 +88,15 @@ You may use Vidage on one of the following ways:
   <tr>
     <td><code>play()</code></td>
     <td>&mdash;</td>
-    <td>Plays the media</td>
+    <td>播放方法</td>
   </tr>
   <tr>
     <td><code>pause()</code></td>
+    <td>&mdash;</td>
+    <td>暂停方法</td>
+  </tr>
+  <tr>
+    <td><code>changsrc()</code></td>
     <td><code>src,callback</code></td>
     <td><code>src</code>:播放的地址;<code>callback</code>:回调函数</td>
   </tr>
