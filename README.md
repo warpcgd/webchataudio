@@ -49,10 +49,30 @@ You may use Vidage on one of the following ways:
 
 ###options/初始化参数
 
-Option | Type | Default | Description
-:-- | :--: | :--: | --:
-autoplay | Boolean  | true | 播放器是否在初始化时自动播放
-src|String|null|如果audeio标签上没设定src属性，可在初始化时设置
+<table width="100%">
+<thead>
+  <tr>
+    <th width="20%">Option</th>
+    <th width="20%">Type</th>
+    <th width="20%">Default</th>
+    <th width="40%">Description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><code>autoplay</code></td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>播放器是否在初始化时自动播放</td>
+  </tr>
+  <tr>
+    <td><code>src</code></td>
+    <td>String</td>
+    <td>&mdash;</td>
+    <td>如果audeio标签上没设定src属性，可在初始化时设置</td>
+  </tr>
+ </tbody>
+</table>
 
 ###API/执行方法
 
