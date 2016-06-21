@@ -1,14 +1,21 @@
 中文 | [English](README_EN.md)
 
 ###weixinAudio.js
-#####一个简单的微信样式播放器/
+#####一个简单的微信样式播放器
 * * *
+
 播放器DOM及CSS是微信里内置的音频播放器的样式，重新创建了控制层js，方便在在公众号，APP等场景使用。
-###例子/
+
+###例子
+
 Take a look at this simple
-###如何使用/
+
+###如何使用
+
 You may use Vidage on one of the following ways:
-###HTML模板/
+
+###HTML模板
+
 ```html
 <p class="weixinAudio">
 	<audio src="../sound/sound.mp3" id="media" width="1" height="1" preload></audio>
@@ -28,7 +35,9 @@ You may use Vidage on one of the following ways:
 	</span>
 </p>
 ```
+
 ###Js调用
+
 ```html
 //你需要先引入一个jQuery
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
@@ -37,13 +46,18 @@ You may use Vidage on one of the following ways:
    $('.jaudio').jAudio(options);
 </script>
 ```
-###options/初始化参数
-| Option        | Type           | Default  | Description |
-| :------------- :|:--------------:| --------:|------------:|
-| autoplay    | Boolean  | true    |        |
 
+###options/初始化参数
 
 Option | Type | Default | Description
 ----|------|----|----
 autoplay | Boolean  | true | 播放器是否在初始化时自动播放
+src|String|null|如果audeio标签上没设定src属性，可在初始化时设置
+
 ###API/执行方法
+
+Method | Parameters | Description
+----|------|----
+play() | ——  | Plays the audio
+pause()|——|null|Pauses the audio
+changeSrc(...)|src,callback|src:播放的地址</br>callback:回掉函数

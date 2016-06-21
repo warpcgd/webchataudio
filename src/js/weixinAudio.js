@@ -41,6 +41,9 @@
 				clearInterval(self.timer);
 				self.$audio_area.removeClass('playing');
 			},
+			stop:function(){
+				
+			},
 			events: function() {
 				var self = this;
 				var updateTime;
@@ -106,9 +109,10 @@
 			//改变音频源
 			changeSrc:function(src,callback){
 				var self = this;
+				self.pause();
 				self.Audio.src = src;
 				self.play();
-				callback{}
+				callback();
 			},
 		};
 		var instantiate = function() {
