@@ -76,23 +76,23 @@ You may use Vidage on one of the following ways:
 
 ###API/执行方法
 
-<table width="100%">
+<table width="100%" align="center">
 <thead>
   <tr>
-    <th width="15%">Method</th>
-    <th width="15%">Parameters</th>
-    <th width="70%">Description</th>
+    <th width="12.5%">Method</th>
+    <th width="12.5%">Parameters</th>
+    <th width="75%">Description</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td style="text-align: center;"><code>play()</code></td>
-    <td style="text-align: center;">&mdash;</td>
+    <td><code>play()</code></td>
+    <td>&mdash;</td>
     <td>Plays the media</td>
   </tr>
   <tr>
-    <td style="text-align: center;"><code>pause()</code></td>
-    <td style="text-align: center;">'src,callback'</td>
+    <td><code>pause()</code></td>
+    <td>'src,callback'</td>
     <td>src:播放的地址</br>callback:回掉函数</td>
   </tr>
  </tbody>
