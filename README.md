@@ -43,9 +43,7 @@ You may use Vidage on one of the following ways:
 | autoplay    | Boolean  | true    |        |
 
 
-dog | bird | cat
-----|------|----
-foo | foo  | foo
-bar | bar  | bar
-baz | baz  | baz
+Option | Type | Default | Description
+----|------|----|----
+autoplay | Boolean  | true | 播放器是否在初始化时自动播放
 ###API/执行方法
