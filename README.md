@@ -69,7 +69,7 @@ You may use Vidage on one of the following ways:
     <td><code>src</code></td>
     <td>String</td>
     <td>&mdash;</td>
-    <td>如果audeio标签上没设定src属性，可在初始化时设置</td>
+    <td>如果audio标签上没设定src属性，可在初始化时设置</td>
   </tr>
  </tbody>
 </table>
@@ -92,8 +92,8 @@ You may use Vidage on one of the following ways:
   </tr>
   <tr>
     <td><code>pause()</code></td>
-    <td>'src,callback'</td>
-    <td>src:播放的地址</br>callback:回掉函数</td>
+    <td><code>src,callback</code></td>
+    <td><code>src</code>:播放的地址;<code>callback</code>:回调函数</td>
   </tr>
  </tbody>
 </table>
