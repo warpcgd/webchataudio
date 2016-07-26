@@ -1,10 +1,14 @@
 (function() {
-	$.fn.weixinAudio = function() {
+	$.fn.weixinAudio = function(options) {
 		var $this = $(this);
-
+		var defaultoptions = {
+			autoplay:false,
+			src:'',
+		};
 		function Plugin($context) {
 			//dom
 			this.$context = $context;
+
 			this.$Audio = $context.children('#media');
 			this.Audio = this.$Audio[0];
 			this.$audio_area = $context.find('#audio_area');
@@ -13,6 +17,7 @@
 			//属性
 			this.currentState = 'pause';
 			this.time = null;
+			this.settings = $.extend(true, defaultoptions, options);
 			//执行初始化
 			this.init();
 		}
@@ -21,13 +26,21 @@
 				var self = this;
 				self.updateTotalTime();
 				self.events();
+				// 设置src
+				if(self.settings.src !== ''){
+						self.changeSrc(self.settings.src);
+				}
+				// 设置自动播放
+				if(self.settings.autoplay){
+					self.play();
+				}
 			},
 			play: function() {
 				var self = this;
 				if (self.currentState === "play") {
 					self.pause();
 					return;
-				};
+				}
 				self.Audio.play();
 				clearInterval(self.timer);
 				self.timer = setInterval(self.run.bind(self), 50);
@@ -42,18 +55,18 @@
 				self.$audio_area.removeClass('playing');
 			},
 			stop:function(){
-				
+
 			},
 			events: function() {
 				var self = this;
 				var updateTime;
-				self.$audio_area.on('touchstart', function() {	
+				self.$audio_area.on('click', function() {
 					self.play();
 					if (!updateTime) {
 						self.updateTotalTime();
 						updateTime = true;
 					}
-				})
+				});
 			},
 			//正在播放
 			run: function() {
@@ -61,14 +74,14 @@
 				self.animateProgressBarPosition();
 				if (self.Audio.ended) {
 					self.pause();
-				};
+				}
 			},
 			//进度条
 			animateProgressBarPosition: function() {
 				var self = this,
 					percentage = (self.Audio.currentTime * 100 / self.Audio.duration) + '%';
 				if (percentage == "NaN%") {
-					percentage = 0 + '%'
+					percentage = 0 + '%';
 				}
 				var styles = {
 					"width": percentage
