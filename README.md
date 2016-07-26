@@ -1,6 +1,6 @@
 中文 | [English](README_EN.md)
 
-###weixinAudio.js
+###weixinAudiio.js
 #####一个简单的微信样式播放器
 * * *
 
@@ -8,16 +8,16 @@
 
 ###例子
 
-Take a look at this simple
+[demo](http://warpcgd.github.io/webchataudio/src/demo.html)
 
 ###如何使用
 
-You may use Vidage on one of the following ways:
+通过以下demo来实现
 
 ###HTML模板
 
 ```html
-<p class="weixinAudio">
+<p class="weixinAudo">
 	<audio src="../sound/sound.mp3" id="media" width="1" height="1" preload></audio>
 	<span id="audio_area" class="db audio_area">
 		<span class="audio_wrp db">
@@ -27,7 +27,7 @@ You may use Vidage on one of the following ways:
             </span>
 			<span id="audio_length" class="audio_length tips_global">3:07</span>
 			<span class="db audio_info_area">
-                <strong class="db audio_title">标题</strong> 
+                <strong class="db audio_title">标题</strong>
                 <span class="audio_source tips_global">来源</span>
 			</span>
 			<span id="audio_progress" class="progress_bar" style="width: 0%;"></span>
@@ -43,7 +43,7 @@ You may use Vidage on one of the following ways:
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="js/weixinAudip.js"></script>
 <script>
-   $('.jaudio').jAudio(options);
+   $('.weixinAudo').jAudio(options);
 </script>
 ```
 
@@ -62,7 +62,7 @@ You may use Vidage on one of the following ways:
   <tr>
     <td><code>autoplay</code></td>
     <td>Boolean</td>
-    <td>true</td>
+    <td>false</td>
     <td>播放器是否在初始化时自动播放</td>
   </tr>
   <tr>
