@@ -20,7 +20,7 @@ You may use Vidage on one of the following ways:
             </span>
 			<span id="audio_length" class="audio_length tips_global">3:07</span>
 			<span class="db audio_info_area">
-                <strong class="db audio_title">Title</strong> 
+                <strong class="db audio_title">Title</strong>
                 <span class="audio_source tips_global">From</span>
 			</span>
 			<span id="audio_progress" class="progress_bar" style="width: 0%;"></span>
@@ -30,7 +30,7 @@ You may use Vidage on one of the following ways:
 ```
 ###Regular way(run js)
 ```html
-//weixinAudip.js need jQuery
+//weixinAudio.js need jQuery
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="js/weixinAudip.js"></script>
 <script>
