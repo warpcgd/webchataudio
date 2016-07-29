@@ -1,7 +1,7 @@
 中文 | [English](README_EN.md)
 
-###weixinAudiio.js
-#####一个简单的微信样式播放器
+##weixinAudiio.js
+####一个简单的微信样式播放器
 * * *
 
 播放器DOM及CSS是微信里内置的音频播放器的样式，重新创建了控制层js，方便在在公众号，APP等场景使用。
@@ -43,7 +43,7 @@
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="js/weixinAudip.js"></script>
 <script>
-   $('.weixinAudo').jAudio(options);
+   $('.weixinAudo').weixinAudio(options);
 </script>
 ```
 
