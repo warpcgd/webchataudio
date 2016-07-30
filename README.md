@@ -1,6 +1,6 @@
 中文 | [English](README_EN.md)
 
-##weixinAudiio.js
+##weixinAudio.js
 ####一个简单的微信样式播放器
 * * *
 
