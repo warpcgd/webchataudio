@@ -126,6 +126,7 @@
 				self.Audio.src = src;
 				self.play();
 				callback();
+				return this;
 			},
 		};
 		var instantiate = function() {
