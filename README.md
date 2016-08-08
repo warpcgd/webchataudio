@@ -18,7 +18,7 @@
 
 ```html
 <p class="weixinAudo">
-	<audio src="../sound/sound.mp3" id="media" width="1" height="1" preload></audio>
+	<audio src="../sound/sound1.mp3" id="media" width="1" height="1" preload></audio>
 	<span id="audio_area" class="db audio_area">
 		<span class="audio_wrp db">
 			<span class="audio_play_area">
@@ -27,12 +27,31 @@
             </span>
 			<span id="audio_length" class="audio_length tips_global">3:07</span>
 			<span class="db audio_info_area">
-                <strong class="db audio_title">标题</strong>
-                <span class="audio_source tips_global">来源</span>
+                <strong class="db audio_title">标题1</strong>
+                <span class="audio_source tips_global">来源1</span>
 			</span>
 			<span id="audio_progress" class="progress_bar" style="width: 0%;"></span>
 	 	</span>
 	</span>
+</p>
+<!-- 也可以多音频使用 -->
+<!-- 注意使用同一类名，在js中进行初始化 -->
+<p class="weixinAudo">
+  <audio src="../sound/sound2.mp3" id="media" width="1" height="1" preload></audio>
+  <span id="audio_area" class="db audio_area">
+    <span class="audio_wrp db">
+      <span class="audio_play_area">
+        <i class="icon_audio_default"></i>
+        <i class="icon_audio_playing"></i>
+            </span>
+      <span id="audio_length" class="audio_length tips_global">3:07</span>
+      <span class="db audio_info_area">
+                <strong class="db audio_title">标题2</strong>
+                <span class="audio_source tips_global">来源2</span>
+      </span>
+      <span id="audio_progress" class="progress_bar" style="width: 0%;"></span>
+    </span>
+  </span>
 </p>
 ```
 
