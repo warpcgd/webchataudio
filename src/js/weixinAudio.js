@@ -126,12 +126,16 @@
 				self.Audio.src = src;
 				self.play();
 				callback();
-				return this;
 			},
 		};
-		var instantiate = function() {
-			return new Plugin($(this));
-		}
-		$this.each(instantiate); //多个执行返回对象
+		var obj = {}
+		// var instantiate = function() {
+		// 	 new Plugin($(this));
+		// }
+		$this.each(function(index,element){
+			obj['weixinAudio'+index] = new Plugin($(this));
+		}); //多个执行返回对象
+
+		return obj
 	}
 })(jQuery)
