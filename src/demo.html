@@ -834,7 +834,19 @@ i.gif_img_loading {
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="js/weixinAudio.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-$('.weixinAudio').weixinAudio();
+// 修改了返回的对象,以前的无法接收
+var weixinAudioObj = $('.weixinAudio').weixinAudio();
+// 添加单一播放的逻辑
+$('.weixinAudio').on('click',function(event) {
+    var $this = $(this);
+    var currentIndex = $this.index();
+    // 遍历所有对象，找到非当前点击，执行pause()方法;
+    $.each(weixinAudioObj,function(i, el) {
+        if(i != 'weixinAudio'+currentIndex){
+            el.pause();
+        }
+    });
+});
 </script>
 
 </html>
