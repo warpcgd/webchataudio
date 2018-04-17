@@ -16,6 +16,7 @@
 			this.$audio_progress = $context.find('#audio_progress');
 			//属性
 			this.currentState = 'pause';
+			this.audiocurrentTime = 0;
 			this.time = null;
 			this.settings = $.extend(true, defaultoptions, options);
 			//执行初始化
@@ -86,6 +87,16 @@
 				var styles = {
 					"width": percentage
 				};
+				
+				//当音频播放异常，暂停播放
+				if (this.audiocurrentTime == self.Audio.currentTime && this.audiocurrentTime!=0) {
+				    self.Audio.currentTime = 0;
+				    self.pause();
+				    self.Audio.load();
+				}
+
+				this.audiocurrentTime = self.Audio.currentTime;
+				
 				self.$audio_progress.css(styles);
 			},
 			//获取时间秒
